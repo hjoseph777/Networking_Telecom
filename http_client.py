@@ -1,7 +1,6 @@
 """
 HTTP Client for CPAN-226 Assignment
-Student Name: Harry Joseph
-Student ID: N00881767
+Course: CPAN-226 — Winter 2026
 Date: January 30, 2026
 """
 
@@ -39,11 +38,12 @@ try:
     request = (
         "GET /kurose_ross/interactive/index.php HTTP/1.1\r\n"
         "Host: gaia.cs.umass.edu\r\n"
+        "Connection: close\r\n"
         "\r\n"
     )
 
     # Step 4: Send the request (encode string to bytes).
-    client_socket.send(request.encode())
+    client_socket.sendall(request.encode())
     print("Request sent successfully")
 
     # Step 5: Receive the response (up to 4096 bytes).

@@ -98,7 +98,7 @@ Let’s see what that conversation looked like on the wire.
 
 ### Evidence: HTTP Response
 ## Figure: HTTP 200 Response Packet
-![HTTP 200 response packet](Part3HTTP_1_1_%20200MovedPermanentlypacket.png)
+![HTTP 200 response packet](Part3HTTP_1_1_200_OK_packet.png)
 
 **Analyze the HTTP Response:**
 - Find the packet labeled `HTTP/1.1 200 OK`.
